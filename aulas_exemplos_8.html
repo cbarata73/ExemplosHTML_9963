@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplos da Aula</title>
+    <link rel="icon" href="static/imagens/favicon.ico" />
+    <style>
+      /*
+      div {
+        width:300px;
+        margin:auto;
+      }*/
+
+      .mycontainer {
+        width: 100%;
+      }
+      .mycontainer div {
+        width: 33%;
+        float: left;
+      }
+
+      .exemplo {
+        width: 33%;
+        display: inline-block;
+      }
+
+      .outroexemplo {
+        display: flex;
+      }
+      .outroexemplo > div {
+        width: 33%;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+      }
+    </style>
+  </head>
+  <body>
+    Lorem Ipsum
+    <div style="background-color: aquamarine">I am a div</div>
+    dolor sit amet.
+
+    <div>
+      <h2>Londres</h2>
+      <p>Londres é a capital da Inglaterra.</p>
+      <p>Londres tem cerca de 13 milhões de habitantes</p>
+    </div>
+
+    <div>
+      <h2>Oslo</h2>
+      <p>Oslo é a capital da Noruega.</p>
+      <p>Oslo tem cerca de 600.000 habitantes.</p>
+    </div>
+
+    <div>
+      <h2>Roma</h2>
+      <p>Roma é a capital da Itália.</p>
+      <p>Rome tem cerca de 3 milhões de habitantes.</p>
+    </div>
+
+    <div class="mycontainer">
+      <div style="background-color: #fff4a3">
+        <h2>Londres</h2>
+        <p>Londres é a capital da Inglaterra.</p>
+        <p>Londres tem cerca de 13 milhões de habitantes</p>
+      </div>
+
+      <div style="background-color: #ffc0c7">
+        <h2>Oslo</h2>
+        <p>Oslo é a capital da Noruega.</p>
+        <p>Oslo tem cerca de 600.000 habitantes.</p>
+      </div>
+
+      <div style="background-color: #d9eee1">
+        <h2>Roma</h2>
+        <p>Roma é a capital da Itália.</p>
+        <p>Rome tem cerca de 3 milhões de habitantes.</p>
+      </div>
+    </div>
+
+    <p>Divisão das div's</p>
+
+    <div class="exemplo" style="background-color: #fff4a3">
+      <h2>Londres</h2>
+      <p>Londres é a capital da Inglaterra.</p>
+      <p>Londres tem cerca de 13 milhões de habitantes</p>
+    </div>
+
+    <div class="exemplo" style="background-color: #ffc0c7">
+      <h2>Oslo</h2>
+      <p>Oslo é a capital da Noruega.</p>
+      <p>Oslo tem cerca de 600.000 habitantes.</p>
+    </div>
+
+    <div class="exemplo" style="background-color: #d9eee1">
+      <h2>Roma</h2>
+      <p>Roma é a capital da Itália.</p>
+      <p>Rome tem cerca de 3 milhões de habitantes.</p>
+    </div>
+
+
+    
+    <h1>Exemplo Flexbox</h1>
+
+    <p>Alinhar 3 DIVs lado a lado.</p>
+
+    <div class="outroexemplo">
+      <div style="background-color: #fff4a3">
+        <h2>Londres</h2>
+        <p>Londres é a capital da Inglaterra.</p>
+        <p>Londres tem cerca de 13 milhões de habitantes</p>
+      </div>
+
+      <div style="background-color: #ffc0c7">
+        <h2>Oslo</h2>
+        <p>Oslo é a capital da Noruega.</p>
+        <p>Oslo tem cerca de 600.000 habitantes.</p>
+      </div>
+
+      <div style="background-color: #d9eee1">
+        <h2>Roma</h2>
+        <p>Roma é a capital da Itália.</p>
+        <p>Rome tem cerca de 3 milhões de habitantes.</p>
+      </div>
+    </div>
+
+
+
+    <h1>Grid Example</h1>
+
+    <p>Align three DIV elements side by side.</p>
+
+    <div class="grid-container">
+      <div style="background-color: #fff4a3">
+        <h2>Londres</h2>
+        <p>Londres é a capital da Inglaterra.</p>
+        <p>Londres tem cerca de 13 milhões de habitantes</p>
+      </div>
+
+      <div style="background-color: #ffc0c7">
+        <h2>Oslo</h2>
+        <p>Oslo é a capital da Noruega.</p>
+        <p>Oslo tem cerca de 600.000 habitantes.</p>
+      </div>
+
+      <div style="background-color: #d9eee1">
+        <h2>Roma</h2>
+        <p>Roma é a capital da Itália.</p>
+        <p>Rome tem cerca de 3 milhões de habitantes.</p>
+      </div>
+
+    </div>
+  </body>
+</html>
