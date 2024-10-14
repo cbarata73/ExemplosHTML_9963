@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exemplo de Site Multimédia</title>
     <style>
-        body {
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            text-align: center;
-            padding: 20px;
-        }
-        .image-gallery {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-        .image-gallery img {
-            width: 30%;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-        }
+      body {
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        text-align: center;
+        padding: 20px;
+      }
+      .image-gallery {
+        display: grid;
+        justify-content: space-around;
+        margin-top: 20px;
+        grid-template-columns: 33% 33% 33%;
+        text-align: left;
+
+      }
+      .image-gallery img {
+        width: 100%;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Bem-vindo ao Meu Site Multimédia</h1>
+      <h1>Bem-vindo ao Meu Site Multimédia</h1>
     </header>
     <main class="container">
-        <section>
-            <h2>Galeria de Imagens</h2>
-            <div class="image-gallery">
-                <figure>
-                    <img src="https://cdn.pixabay.com/photo/2020/06/20/20/07/sunset-5328913_960_720.jpg" alt="Descrição da Imagem 1">
-                    <figcaption>Imagem 1 - Pixabay</figcaption>
-                </figure>
-                <figure>
-                    <img src="https://images.pexels.com/photos/1234567/pexels-photo-1234567.jpeg" alt="Descrição da Imagem 2">
-                    <figcaption>Imagem 2 - Pexels</figcaption>
-                </figure>
-                <figure>
-                    <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Descrição da Imagem 3">
-                    <figcaption>Imagem 3 - Unsplash</figcaption>
-                </figure>
-            </div>
-        </section>
+      <h2>Galeria de Imagens</h2>
+      <div class="image-gallery">
+        <figure>
+          <img src="https://cdn.pixabay.com/photo/2024/06/05/19/45/mountains-8811206_1280.jpg" alt="Descrição da Imagem 1" />
+          <figcaption>Imagem 1 - Pixabay</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.pexels.com/photos/1234567/pexels-photo-1234567.jpeg" alt="Descrição da Imagem 2" />
+          <figcaption>Imagem 2 - Pexels</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Descrição da Imagem 3" />
+          <figcaption>Imagem 3 - Unsplash</figcaption>
+        </figure>
+      </div>
     </main>
     <footer>
-        <p>© 2024 Meu Site Multimédia</p>
+      <p>© 2024 Meu Site Multimédia</p>
     </footer>
-</body>
+  </body>
 </html>

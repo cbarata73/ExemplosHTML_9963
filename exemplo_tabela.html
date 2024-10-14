@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplos da Aula 10</title>
+    <link rel="icon" href="static/imagens/favicon.ico" />
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      .table-container {
+        width: 50%;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">Produtos</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Quantidade em Stock</th>
+            <th>Data de Registo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Smartphone X</td>
+            <td>2.500,00€</td>
+            <td>100</td>
+            <td>15/03/2024</td>
+          </tr>
+          <tr>
+            <td>Notebook Y</td>
+            <td>4.000,00€</td>
+            <td>50</td>
+            <td>20/04/2024</td>
+          </tr>
+          <tr>
+            <td>Tablet Z</td>
+            <td>1.800,00€</td>
+            <td>80</td>
+            <td>10/05/2024</td>
+          </tr>
+          <tr>
+            <td>Iphone 16 Max</td>
+            <td>1.650,00€</td>
+            <td>25</td>
+            <td>10/09/2024</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Total de Produtos:</td>
+            <td>4</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
