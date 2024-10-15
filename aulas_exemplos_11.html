@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplos da Aula 11</title>
+    <link rel="icon" href="static/imagens/favicon.ico" />
+    <style>
+      thead {
+        color: green;
+        text-align: center;
+        background-color: antiquewhite;
+      }
+      tbody {
+        color: blue;
+        background-color: lightgray;
+      }
+      tfoot {
+        color: red;
+      }
+      table {
+        width: 40%;
+        margin: 0 auto; /* centrar a tabela na página */
+        /*border-spacing: 30px;*/
+        border: 1px solid black;
+        /*border-radius: 5px;*/ /* colocar a border-collapse em comentário se existir */
+      }
+      th,
+      td {
+        /*padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 40px;*/
+        border: 1px solid black;
+        /*border-radius: 5px;*/ /* colocar a border-collapse em comentário */
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">Exemplos tabelas</h2>
+    <table>
+      <thead style="height: 50px">
+        <tr>
+          <th style="width: 100px">Mês</th>
+          <th>Savings</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Janeiro</td>
+          <td>100€</td>
+        </tr>
+        <tr style="height: 45px">
+          <td>Fevereiro</td>
+          <td>80€</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Soma</td>
+          <td>180€</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+    <br />
+    <table style="width: 400px">
+      <thead>
+        <tr>
+          <th colspan="2">Nome</th>
+          <th>Idade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Maria</td>
+          <td>Antonia</td>
+          <td>43</td>
+        </tr>
+        <tr>
+          <td>Manuel</td>
+          <td>Almeida</td>
+          <td>57</td>
+        </tr>
+        <tr>
+          <td>Luis</td>
+          <td rowspan="2">Baião</td>
+          <td>62</td>
+        </tr>
+        <tr>
+          <td>Antonio</td>
+          <td>45</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total das idades</td>
+          <td style="font-weight: bolder">207</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+    <br />
+    <table style="width: 20%">
+      <tr>
+        <th>Nomes</th>
+        <td>Carlos</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Telemovel</th>
+        <td>960960960</td>
+      </tr>
+      <tr>
+        <td>936936999</td>
+      </tr>
+    </table>
+    <br />
+    <table style="width: 35%">
+      <tr>
+        <th style="width: 150px">Firstname</th>
+        <td>Jill</td>
+        <td>Eve</td>
+      </tr>
+      <tr>
+        <th>Lastname</th>
+        <td>Smith</td>
+        <td>Jackson</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>50</td>
+        <td>94</td>
+      </tr>
+    </table>
+  </body>
+</html>
