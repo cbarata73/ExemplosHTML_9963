@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplos da Aula 18</title>
+    <link rel="icon" href="static/imagens/favicon.ico" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+      }
+      .form-group {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        width: 450px;
+      }
+      .form-group label {
+        margin-right: 10px;
+      }
+      .form-group textarea {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Form por defeito assume o método de envio por
+      <b>GET</b>
+    </p>
+
+    <form action="" method="get">
+      <input type="hidden" name="userID" value="12345" />
+
+      <fieldset style="width: 35%;">
+        <legend>Informações Pessoais</legend>
+        <label for="nome">Nome:</label>
+        &nbsp;
+        <input type="text" id="nome" name="nome" maxlength="50" placeholder="Digite o seu nome" required />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="apelido">Apelido:</label>
+        <input type="text" id="apelido" name="apelido" />
+      </fieldset>
+
+      <br />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <br />
+      <br />
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" maxlength="20" required />
+
+      <br />
+      <br />
+      <label for="quantidade">Quantidade:</label>
+      <input type="number" id="quantidade" name="quantidade" min="1" max="10" step="1" />
+
+      <br />
+      <br />
+      <label for="website">Website:</label>
+      <input type="url" id="website" name="website" placeholder="https://exemplo.com" required />
+
+      <br />
+      <br />
+      <label for="volume">Volume:</label>
+      <input type="range" id="volume" name="volume" min="0" max="100" step="1" />
+
+      <br />
+      <br />
+      <label for="cor">Escolha uma cor:</label>
+      <input type="color" id="cor" name="cor" value="#ff0000" />
+
+      <br />
+      <br />
+      <p>Género:</p>
+      <input type="radio" id="masculino" name="genero" value="masculino" />
+      <label for="masculino">Masculino</label>
+      <input type="radio" id="feminino" name="genero" value="feminino" />
+      <label for="feminino">Feminino</label>
+
+      <br />
+      <br />
+      <p>Interesses:</p>
+      <input type="checkbox" id="musica" name="interesse" value="musica" />
+      <label for="musica">Música</label>
+      <input type="checkbox" id="desporto" name="interesse" value="desporto" />
+      <label for="desporto">Desporto</label>
+
+      <br />
+      <br />
+      <br />
+      <label for="ficheiro">Carregar ficheiro:</label>
+      <input type="file" id="ficheiro" name="ficheiro" accept=".jpg,.png,.pdf" />
+
+      <br />
+      <br />
+      <br />
+      <label for="data">Data de Nascimento:</label>
+      <input type="date" id="data" name="data" min="1900-01-01" max="2023-12-31" />
+
+      <br />
+      <br />
+      <label for="mes">Escolha um mês:</label>
+      <input type="month" id="mes" name="mes" min="2020-01" max="2025-12" />
+
+      <br />
+      <br />
+      <label for="hora">Escolha um horário:</label>
+      <input type="time" id="hora" name="hora" min="09:00" max="18:00" step="1" />
+
+      <br />
+      <br />
+      <label for="datatempo">Escolha uma data e hora:</label>
+      <input type="datetime-local" id="datatempo" name="datatempo" min="2023-01-01T00:00" max="2024-12-31T23:59" />
+
+      <br />
+      <br />
+      <label for="semana">Escolha uma semana:</label>
+      <input type="week" id="semana" name="semana" min="2023-W01" max="2023-W52" />
+
+      <br />
+      <br />
+      <div class="form-group">
+        <label for="comentarios">Comentários:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" maxlength="500" placeholder="Escreva o seu comentário aqui..."></textarea>
+      </div>
+
+      <p>Escolha o seu país:</p>
+      <label for="pais">País:</label>
+      <select id="pais" name="pais">
+        <option value="pt">Portugal</option>
+        <option value="br">Brasil</option>
+        <option value="es">Espanha</option>
+        <option value="fr">França</option>
+        <option value="it">Itália</option>
+        <option value="de">Alemanha</option>
+        <option value="uk">Reino Unido</option>
+        <option value="us">Estados Unidos</option>
+        <option value="jp">Japão</option>
+        <option value="cn">China</option>
+      </select>
+
+      <br />
+      <br />
+      <label for="navegador">Escolha o seu navegador:</label>
+      <input type="text" id="navegador" name="navegador" list="navegadores" />
+      <datalist id="navegadores">
+        <option value="Chrome"></option>
+        <option value="Firefox"></option>
+        <option value="Edge"></option>
+        <option value="Safari"></option>
+        <option value="Opera"></option>
+        <option value="Internet Explorer"></option>
+        <option value="Outro"></option>
+      </datalist>
+
+      <br />
+      <br />
+      <br />
+      <input type="submit" value="Enviar" style="width: 100px" />
+
+      <input type="reset" value="Reiniciar Formulário" />
+
+      <button type="button" onclick="alert('Botão clicado!')" style="width: 100px">Clique Aqui</button>
+
+      <br />
+      <br />
+      <input type="image" src="static/imagens/submit.png" alt="Submeter Formulário" />
+    </form>
+  </body>
+</html>
